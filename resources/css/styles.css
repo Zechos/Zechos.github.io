@@ -1,0 +1,69 @@
+/* Color Theme Swatches in Hex */
+.Wilderness-1-hex { color: #025159; }
+.Wilderness-2-hex { color: #04BFBF; }
+.Wilderness-3-hex { color: #038C8C; }
+.Wilderness-4-hex { color: #BF9A78; }
+.Wilderness-5-hex { color: #8C452B; }
+
+/* Color Theme Swatches in RGBA */
+.Wilderness-1-rgba { color: rgba(1, 80, 89, 1); }
+.Wilderness-2-rgba { color: rgba(3, 191, 191, 1); }
+.Wilderness-3-rgba { color: rgba(2, 140, 140, 1); }
+.Wilderness-4-rgba { color: rgba(191, 153, 120, 1); }
+.Wilderness-5-rgba { color: rgba(140, 69, 43, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Wilderness-1-hsla { color: hsla(185, 96, 17, 1); }
+.Wilderness-2-hsla { color: hsla(180, 96, 38, 1); }
+.Wilderness-3-hsla { color: hsla(180, 96, 28, 1); }
+.Wilderness-4-hsla { color: hsla(28, 35, 61, 1); }
+.Wilderness-5-hsla { color: hsla(16, 52, 36, 1); }
+
+/* Universal Styles */
+html {
+    font-size: 16px;
+    background-color: #025159;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    color: #BF9A78;
+}
+
+h3 {
+    color: #04BFBF;
+}
+
+/* Header */
+header {
+    background-color: #8C452B;
+    width: 100%;
+}
+
+header ul {
+    
+}
+
+/* Intro */
+div.greeting {
+    display: inline-block;
+}
+
+.round-crop {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #04BFBF;
+}
+
+.intro img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
