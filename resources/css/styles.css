@@ -5,20 +5,6 @@
 .Wilderness-4-hex { color: #BF9A78; }
 .Wilderness-5-hex { color: #8C452B; }
 
-/* Color Theme Swatches in RGBA */
-.Wilderness-1-rgba { color: rgba(1, 80, 89, 1); }
-.Wilderness-2-rgba { color: rgba(3, 191, 191, 1); }
-.Wilderness-3-rgba { color: rgba(2, 140, 140, 1); }
-.Wilderness-4-rgba { color: rgba(191, 153, 120, 1); }
-.Wilderness-5-rgba { color: rgba(140, 69, 43, 1); }
-
-/* Color Theme Swatches in HSLA */
-.Wilderness-1-hsla { color: hsla(185, 96, 17, 1); }
-.Wilderness-2-hsla { color: hsla(180, 96, 38, 1); }
-.Wilderness-3-hsla { color: hsla(180, 96, 28, 1); }
-.Wilderness-4-hsla { color: hsla(28, 35, 61, 1); }
-.Wilderness-5-hsla { color: hsla(16, 52, 36, 1); }
-
 /* Universal Styles */
 html {
     font-size: 16px;
@@ -37,19 +23,48 @@ h3 {
     color: #04BFBF;
 }
 
+a {
+    text-decoration: none;
+    color: #04BFBF;
+    font-weight: 600;
+}
+
+.italics {
+    font-style: italic;
+}
+
 /* Header */
 header {
     background-color: #8C452B;
     width: 100%;
+    height: 2rem;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    border-bottom: solid 1px #BF9A78;
+    margin: 0%;
+    align-content: center;
 }
 
 header ul {
-    
+    display: flex;
+    justify-content: flex-end;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    font-size: 1rem;
+    padding-right: 1.5rem;
 }
 
 /* Intro */
 div.greeting {
-    display: inline-block;
+    position: relative;
+    top: 2rem; /*To offset for fixed header*/
+    display: flex;
+    padding-bottom: 1rem;
 }
 
 .round-crop {
@@ -59,6 +74,7 @@ div.greeting {
     overflow: hidden;
     border-radius: 50%;
     border: 5px solid #04BFBF;
+    margin-right: 1rem;
 }
 
 .intro img {
@@ -66,4 +82,33 @@ div.greeting {
     margin: 0 auto;
     height: 100%;
     width: auto;
+}
+
+/* Links */
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin: 2rem 2.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+}
+
+.links img {
+    max-height: 5rem;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.links .card-content h3{
+    align-content: center;
+    justify-content: center;
+    text-overflow: ellipsis;
 }
