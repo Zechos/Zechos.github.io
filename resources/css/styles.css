@@ -10,7 +10,7 @@ html {
     font-size: 16px;
     background-color: #025159;
     font-family: 'Catamaran', sans-serif;
-    font-size: 16px
+    font-size: 16px;
 }
 
 h1 {
@@ -31,6 +31,10 @@ a {
 
 .italics {
     font-style: italic;
+}
+
+.mobile {
+    display: none;
 }
 
 /* Header */
@@ -111,4 +115,76 @@ div.greeting {
     align-content: center;
     justify-content: center;
     text-overflow: ellipsis;
+}
+
+/* Footer */
+footer h5 {
+    color: #BF9A78;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 480px) {
+    
+    /* Header */
+    header {
+        display: none;
+    }
+
+    /* Intro */
+    h1 {
+        font-size: 60px;
+    }
+
+    .round-crop {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Links */
+    .links {
+        display: block;
+    }
+
+    /* Footer */
+    footer {
+        margin-bottom: 3.5rem; /*To offset for fixed nav*/
+        line-height: 1rem;
+    }
+
+    nav.mobile {
+        width: 100%;
+        display: flex;
+        vertical-align: middle; 
+        background-color: #8C452B;
+        position: fixed;
+        bottom: 0rem;
+        z-index: 100;
+        border-top: solid 1px #BF9A78;
+        margin: 0%;
+        justify-content: center;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    nav.mobile ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        list-style: none;
+        margin: 0%;
+        padding-left: 0px;
+    }
+
+    nav.mobile li {
+        align-items: center;
+        list-style: none;
+        display: inline;
+        margin: 0%;
+    }
+
+    .mobile li img {
+        max-height: 1.5rem;
+        width: auto;
+        margin: 0%;
+    }
 }
